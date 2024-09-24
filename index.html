@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness & Meal Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fitness & Meal Tracker</h1>
+
+        <!-- Workout Section -->
+        <section id="workouts-section">
+            <h2>Workout Plans</h2>
+            <ul id="workout-list"></ul>
+            <button id="add-workout-btn">Create New Workout</button>
+        </section>
+
+        <!-- Meal Section -->
+        <section id="meals-section">
+            <h2>Meal Tracker</h2>
+            <h3>Today’s Meals</h3>
+            <form id="meal-form">
+                <label for="meal-type">Meal:</label>
+                <select id="meal-type">
+                    <option value="Breakfast">Breakfast</option>
+                    <option value="Lunch">Lunch</option>
+                    <option value="Dinner">Dinner</option>
+                </select>
+                <input type="text" id="meal-name" placeholder="Meal Description">
+                <input type="number" id="calories" placeholder="Calories">
+                <button type="submit">Add Meal</button>
+            </form>
+            <h3>Daily Calories: <span id="total-calories">0</span> kcal</h3>
+        </section>
+
+        <!-- Weekly Checklist -->
+        <section id="checklist-section">
+            <h2>Weekly Checklist</h2>
+            <ul id="checklist">
+                <li><input type="checkbox" id="workout-day1"> Workout - Day 1</li>
+                <li><input type="checkbox" id="workout-day2"> Workout - Day 2</li>
+                <li><input type="checkbox" id="workout-day3"> Workout - Day 3</li>
+                <li><input type="checkbox" id="recovery-day1"> Recovery - Day 1</li>
+                <li><input type="checkbox" id="recovery-day2"> Recovery - Day 2</li>
+            </ul>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
